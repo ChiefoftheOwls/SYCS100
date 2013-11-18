@@ -1,3 +1,4 @@
+git commit
 # hello teamates this is our file. add your code and comment your name
 
 # Nolan English Code Follows
