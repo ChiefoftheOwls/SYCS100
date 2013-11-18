@@ -114,7 +114,7 @@ print index
 #selina Jones code
 mylist=[0,6,98,1,4,88,33,91,43,90,78]
  mylist.sort()
- print mylist
+ mylist
  
 
  def bsearch(mylist,x):
@@ -136,5 +136,27 @@ mylist=[0,6,98,1,4,88,33,91,43,90,78]
              return mid
      return -1
              
- print bsearch([0,6,98,1,4,88,33,91,43,90,78],0)
+ bsearch([0,6,98,1,4,88,33,91,43,90,78],0)
+# Selina Jones code ends
 
+#Oreoluwa Onatemowo's code starts
+def bsearch(blist,searchElement):       
+    blist.sort()
+    if blist == []:
+        return -1
+    else:
+        initial_index=0
+        final_index = len(blist)-1
+        while initial_index <= final_index:
+            midpoint = (initial_index + final_index)/2
+            if blist[midpoint] == searchElement:
+                return len(blist)/2
+            
+            elif blist[midpoint]  > searchElement:
+                final_index = midpoint+1
+            elif blist[midpoint] < searchElement:
+                initial_index = midpoint-1
+            elif searchElement in blist != True:
+                return -1
+
+#Oreoluwa Onatemowo's code ends here
