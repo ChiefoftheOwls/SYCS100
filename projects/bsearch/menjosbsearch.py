@@ -47,10 +47,10 @@ def bsearch(mylist,x):
 #selina's code ends here
 #Elyon Olaniran code starts here
 '''binary search only works on a sorted list. for the sake of this code.
-I created a sorted List, hence no need to sort it again.'''
+only a sorted list should be given as a parameter for the function bsearch'''
 def bsearch(List, Element):
         if List == []:
-                print 'empty list'
+                #print 'empty list'
         else:
                 x = len(List)
                 q = 0
@@ -66,6 +66,6 @@ def bsearch(List, Element):
                         elif Element > List[midpoint]:
                                 first = midpoint + 1
                                 midpoint = (first+last)//2
-                        else:
-                                return -1
+                        #else:
+                 return -1
 #Elyon Olaniran Code ends here
